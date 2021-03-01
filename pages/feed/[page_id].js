@@ -10,7 +10,7 @@ const Feed = ({ pageNumber, articles }) => {
     <div className='bg-gray-900 h-full'>
       <div className='container max-w-screen-xl mx-auto p-1'>
         <Navbar />
-        <div className='max-w-screen-sm lg:max-w-screen-lg grid gap-10 m-5 mx-auto grid-cols-1 lg:grid-cols-2'>
+        <div className='max-w-screen-sm lg:max-w-screen-lg grid gap-10 m-10 mx-auto grid-cols-1 lg:grid-cols-2'>
           {articles.map((article, index) => (
             <Card key={index} article={article} />
           ))}
